@@ -20,7 +20,7 @@ document.getElementById("submitBtn").addEventListener("click", e => {
       const eventsList = events.events.events;
       if (eventsList.length > 0) {
         // Print the events
-        console.log(eventsList);
+        ui.displayEvents(eventsList);
       } else {
         // There are no events, print a message
         ui.printMessage(
